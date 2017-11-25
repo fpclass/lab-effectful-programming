@@ -1,0 +1,36 @@
+name:                lab8
+version:             1.0.0.0
+-- synopsis:
+-- description:
+homepage:            https://github.com/cs256/lab8#readme
+author:              Michael B. Gale
+maintainer:          m.gale@warwick.ac.uk
+copyright:           2017 Michael B. Gale
+build-type:          Simple
+extra-source-files:  README.md
+cabal-version:       >=1.10
+
+library
+  hs-source-dirs:      src
+  exposed-modules:
+    Lab8
+  build-depends:
+    base >= 4.7 && < 5
+  default-language:    Haskell2010
+  ghc-options:
+
+test-suite lab8-test
+  type:                exitcode-stdio-1.0
+  hs-source-dirs:      test
+  main-is:             Spec.hs
+  build-depends:
+    base,
+    hspec,
+    QuickCheck,
+    lab8
+  ghc-options:
+  default-language:    Haskell2010
+
+source-repository head
+  type:     git
+  location: https://github.com/cs256/lab8
