@@ -45,6 +45,10 @@ grandparents =
 -- | The main entry point to the test suite.
 main :: IO ()
 main = hspec $ do
+    describe "grandduck" $ do
+        prop "finds grandducks for ducks" $
+            forAll (elements grandparents) $ \(duck, grand) ->
+            L.grandduck duckily duck == grand
     describe "zipWithM" $ do
         prop "returns the empty list when the first list is empty" $
             \(xs :: [Int]) -> L.zipWithM L.safediv [] xs == Just []
@@ -65,10 +69,6 @@ main = hspec $ do
             let divProp (Just z,(x,y)) = z * y + (x `mod` y) == x
                 divProp (Nothing, _)   = False
             in all divProp $ zip (sequence $ L.zipWithM L.safediv xs ys) (zip xs ys)
-    describe "grandduck" $ do
-        prop "finds grandducks for ducks" $
-            forAll (elements grandparents) $ \(duck, grand) ->
-            L.grandduck duckily duck == grand
     describe "Either is a Functor" $ do
         prop "fmap id x = x" $ do
             \(x :: L.Either Int Int) -> fmap id x == x

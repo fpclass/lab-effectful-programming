@@ -18,21 +18,6 @@ safediv x 0 = Nothing
 safediv x y = Just (x `div` y)
 
 --------------------------------------------------------------------------------
--- Generic functions
-
--- | mapM, but without do-notation
-mapM :: Monad m => (a -> m b) -> [a] -> m [b]
-mapM = undefined
-
--- | the same as above, but with Applicative instead of Monad
-mapA :: Applicative f => (a -> f b) -> [a] -> f [b]
-mapA = undefined
-
--- | Like zipWith, but the function returns a computation (has an effect).
-zipWithM :: Monad m => (a -> b -> m c) -> [a] -> [b] -> m [c]
-zipWithM = undefined
-
---------------------------------------------------------------------------------
 -- Using the Maybe monad
 
 duckily :: [(String, String)]
@@ -46,6 +31,21 @@ duckily =
 -- | A function to find the grandduck of a duck in the duck family.
 grandduck :: [(String, String)] -> String -> Maybe String
 grandduck = undefined
+
+--------------------------------------------------------------------------------
+-- Generic functions
+
+-- | mapM, but without do-notation
+mapM :: Monad m => (a -> m b) -> [a] -> m [b]
+mapM = undefined
+
+-- | the same as above, but with Applicative instead of Monad
+mapA :: Applicative f => (a -> f b) -> [a] -> f [b]
+mapA = undefined
+
+-- | Like zipWith, but the function returns a computation (has an effect).
+zipWithM :: Monad m => (a -> b -> m c) -> [a] -> [b] -> m [c]
+zipWithM = undefined
 
 --------------------------------------------------------------------------------
 -- Either is a Monad
