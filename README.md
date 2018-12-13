@@ -1,2 +1,1 @@
-# lab8
-Effectful programs
+# Lab 9: Effectful programs

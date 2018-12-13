@@ -1,9 +1,9 @@
 --------------------------------------------------------------------------------
--- Functional Programming (CS256)                                             --
--- Lab 8: Monads                                                              --
+-- Functional Programming (CS141)                                             --
+-- Lab 9: Effectful programming                                               --
 --------------------------------------------------------------------------------
 
-module Lab8 where
+module Lab9 where
 
 import Prelude hiding (Either(..), catch, mapM)
 

@@ -1,6 +1,6 @@
 --------------------------------------------------------------------------------
--- Functional Programming (CS256)                                             --
--- Lab 8: Monads                                                              --
+-- Functional Programming (CS141)                                             --
+-- Lab 9: Effectful programming                                               --
 --------------------------------------------------------------------------------
 
 {-# LANGUAGE ScopedTypeVariables #-}
@@ -15,7 +15,7 @@ import Test.QuickCheck
 
 import Data.Char
 
-import qualified Lab8 as L
+import qualified Lab9 as L
 
 --------------------------------------------------------------------------------
 
