@@ -1,6 +1,6 @@
 --------------------------------------------------------------------------------
 -- Functional Programming (CS141)                                             --
--- Lab 9: Effectful programming                                               --
+-- Lab: Effectful programming                                                 --
 --------------------------------------------------------------------------------
 
 {-# LANGUAGE ScopedTypeVariables #-}
@@ -15,7 +15,7 @@ import Test.QuickCheck
 
 import Data.Char
 
-import qualified Lab9 as L
+import qualified Lab as L
 
 --------------------------------------------------------------------------------
 

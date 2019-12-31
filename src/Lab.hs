@@ -1,9 +1,9 @@
 --------------------------------------------------------------------------------
 -- Functional Programming (CS141)                                             --
--- Lab 9: Effectful programming                                               --
+-- Lab: Effectful programming                                                 --
 --------------------------------------------------------------------------------
 
-module Lab9 where
+module Lab where
 
 import Prelude hiding (Either(..), catch, mapM)
 
