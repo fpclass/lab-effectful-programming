@@ -1,1 +1,1 @@
-# Lab 9: Effectful programs
+# Lab: Effectful programs
